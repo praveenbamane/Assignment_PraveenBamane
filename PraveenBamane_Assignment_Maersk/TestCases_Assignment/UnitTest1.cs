@@ -86,5 +86,17 @@ namespace TestCases_Assignment
         }
 
 
+        [Test]
+        public void AgentCommissionTest()
+        {
+            PraveenBamane_Assignment.RuleBase _obj = new PraveenBamane_Assignment.RuleBase();
+
+            var returntype = _obj.GenerateAgentcommision(500);
+
+            Assert.AreEqual(250, returntype);
+            Assert.Pass();
+        }
+
+
     }
 }

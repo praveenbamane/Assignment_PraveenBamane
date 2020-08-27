@@ -137,5 +137,24 @@ namespace PraveenBamane_Assignment
             return _objpackingslip;
         }
 
+        public double GenerateAgentcommision(double payment)
+        {
+            double agentcommision = 0.00;
+
+
+
+            if (1 == 1) // check if agent is still active or died, we can also check if he was double agent :D
+            {
+                agentcommision = payment / 2;  // agent commision is very high in wayneenterprise :) 
+            }
+            else if (2 == 2) // He/She is indeed a double agent
+            {
+                agentcommision = payment / 4;  // reduce the agent commision :) 
+            }
+
+
+            return agentcommision;
+        }
+
     }
 }
