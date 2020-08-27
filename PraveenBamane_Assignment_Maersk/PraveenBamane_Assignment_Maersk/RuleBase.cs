@@ -143,11 +143,11 @@ namespace PraveenBamane_Assignment
 
 
 
-            if (1 == 1) // check if agent is still active or died, we can also check if he was double agent :D
+            if (1 == 1) // check if agent is active. currently set to active
             {
-                agentcommision = payment / 2;  // agent commision is very high in wayneenterprise :) 
+                agentcommision = payment / 2;  // Agent commision added 
             }
-            else if (2 == 2) // He/She is indeed a double agent
+            else if (2 == 2) // More conditions to add Agent comission.
             {
                 agentcommision = payment / 4;  // reduce the agent commision :) 
             }
