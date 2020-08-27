@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using PraveenBamane_Assignment.Modals;
 
 namespace TestCases_Assignment
 {
@@ -47,5 +48,20 @@ namespace TestCases_Assignment
             Assert.IsNotNull(returntype.Membershipid);
             Assert.Pass();
         }
+
+        [Test]
+        public void UpdateMembershiptest()
+        {
+            PraveenBamane_Assignment.RuleBase _obj = new PraveenBamane_Assignment.RuleBase();
+
+            Membership _member = new Membership();
+
+            var returntype = _obj.GenerateMember(_member, 3);
+
+            Assert.AreEqual(3, returntype.Membershiplevel);  // match the passed upgraded level with returned level
+            Assert.Pass();
+        }
+
+
     }
 }

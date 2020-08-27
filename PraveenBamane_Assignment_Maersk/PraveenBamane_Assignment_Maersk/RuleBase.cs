@@ -57,8 +57,25 @@ namespace PraveenBamane_Assignment
              
              */
 
-            Task task = Task.Run(() => sendmail(email, "Memebership Activated", "Dear User, Your membership has been activated starting today. please do not reply to this system generated email address. Regards Wayne Enterprise."));
+            Task task = Task.Run(() => sendmail(email, "Memebership Activated", "Dear User, Your membership has been activated starting today. please do not reply to this system generated email address. Regards W Enterprise."));
 
+            return _member;
+        }
+
+
+        public Membership GenerateMember(Membership _member, int level)
+        {
+
+            _member.Memberisactive = true;
+            _member.Membershiplevel = level;
+            _member.Membershipstartdate = System.DateTime.Now;
+
+            /*
+             
+             code to Update membership details in database/server if necessory 
+             
+             */
+            Task task = Task.Run(() => sendmail(_member.Memberemail, "Memebership Updated", "Dear User, Your membership has been updated starting today. please do not reply to this system generated email address. Regards W Enterprise."));
             return _member;
         }
 
