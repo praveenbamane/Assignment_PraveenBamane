@@ -36,5 +36,16 @@ namespace TestCases_Assignment
             Assert.Pass();
         }
 
+
+        [Test]
+        public void Membershiptest()
+        {
+            PraveenBamane_Assignment.RuleBase _obj = new PraveenBamane_Assignment.RuleBase();
+
+            var returntype = _obj.GenerateMember("bamane1090@gmail.com");
+
+            Assert.IsNotNull(returntype.Membershipid);
+            Assert.Pass();
+        }
     }
 }
