@@ -2,6 +2,8 @@ using NUnit.Framework;
 
 namespace TestCases_Assignment
 {
+
+    [TestFixture]
     public class Tests
     {
         [SetUp]
@@ -10,9 +12,15 @@ namespace TestCases_Assignment
         }
 
         [Test]
-        public void Test1()
+        public void packingsliptest()
         {
+            PraveenBamane_Assignment.RuleBase _obj = new PraveenBamane_Assignment.RuleBase();
+
+            var returntype = _obj.Generatepackingslip("OrderNo");
+
+            Assert.IsNotNull(returntype.PackingSlipid);
             Assert.Pass();
         }
+
     }
 }

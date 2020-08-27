@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PraveenBamane_Assignment_Maersk
+namespace PraveenBamane_Assignment
 {
     class Program
     {
