@@ -112,5 +112,30 @@ namespace PraveenBamane_Assignment
 
         }
 
+        public PackingSlip getvideourl(string videoName)
+        {
+            List<AdditionalItems> listofitems = new List<AdditionalItems>();
+
+            listofitems.Add(new AdditionalItems
+            {
+                videourl = "url to video selected by user"
+            });
+
+            if (videoName == "Learning to Ski")
+            {
+                listofitems.Add(new AdditionalItems
+                {
+                    videourl = "url to video First Aid"
+                });
+            }
+
+            PackingSlip _objpackingslip = new PackingSlip();
+
+            _objpackingslip.PackingSlipid = generateID(10002);
+            _objpackingslip.type = Enums.PackingSlipType.Duplicate;
+            _objpackingslip.addedservice = listofitems;
+            return _objpackingslip;
+        }
+
     }
 }

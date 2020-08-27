@@ -62,6 +62,29 @@ namespace TestCases_Assignment
             Assert.Pass();
         }
 
+        [Test]
+        public void VideoTest()
+        {
+            PraveenBamane_Assignment.RuleBase _obj = new PraveenBamane_Assignment.RuleBase();
+
+            var returntype = _obj.getvideourl("someRandomVideoName");
+
+            Assert.IsNotNull(returntype.addedservice);
+            Assert.Pass();
+        }
+
+
+        [Test]
+        public void VideoTestforSki()
+        {
+            PraveenBamane_Assignment.RuleBase _obj = new PraveenBamane_Assignment.RuleBase();
+
+            var returntype = _obj.getvideourl("Learning to Ski");
+
+            Assert.AreEqual(2, returntype.addedservice.Count);
+            Assert.Pass();
+        }
+
 
     }
 }
