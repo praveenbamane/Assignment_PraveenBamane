@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PraveenBamane_Assignment", "PraveenBamane_Assignment_Maersk\PraveenBamane_Assignment.csproj", "{52B2D4D6-1785-488E-A9EB-00C3CE151C53}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PraveenBamane_Assignment", "PraveenBamane_Assignment\PraveenBamane_Assignment.csproj", "{52B2D4D6-1785-488E-A9EB-00C3CE151C53}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCases_Assignment", "TestCases_Assignment\TestCases_Assignment.csproj", "{2FDB42B3-EACB-4441-B5CD-764820CF48F8}"
 EndProject
