@@ -22,5 +22,19 @@ namespace TestCases_Assignment
             Assert.Pass();
         }
 
+        [Test]
+        public void packingslipduplicate()
+        {
+            PraveenBamane_Assignment.RuleBase _obj = new PraveenBamane_Assignment.RuleBase();
+
+            var returntype = _obj.Generatepackingslip("OrderNo", true);
+
+            PraveenBamane_Assignment.Enums.PackingSlipType _objSliptype = new PraveenBamane_Assignment.Enums.PackingSlipType();
+
+
+            Assert.AreEqual(_objSliptype, returntype.type);  // this will fail as expected is orginial and returned is duplicate.
+            Assert.Pass();
+        }
+
     }
 }

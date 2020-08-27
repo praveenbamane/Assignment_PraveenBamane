@@ -17,7 +17,14 @@ namespace PraveenBamane_Assignment
             return _objpackingslip;
         }
 
-
+        public PackingSlip Generatepackingslip(string orderdetails, bool isduplicate)
+        {
+            PackingSlip _objpackingslip = new PackingSlip();
+            _objpackingslip.PackingSlipid = generateID(10001);
+            _objpackingslip.type = Enums.PackingSlipType.Duplicate;
+            _objpackingslip.addedservice = null;
+            return _objpackingslip;
+        }
 
         private int generateID(int startindex)
         {
